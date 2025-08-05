@@ -1,0 +1,73 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffafc;
+  color: #333;
+}
+
+.hero-banner {
+  background: linear-gradient(to right, #ffc1d3, #ecd6f9);
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-banner .slogan h1 {
+  font-size: 2.5rem;
+  color: #d94c94;
+}
+
+.pop {
+  animation: pop 1s infinite alternate;
+  display: inline-block;
+}
+
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}
+
+.get-started {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #e48bd4;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.services {
+  text-align: center;
+  padding: 2rem;
+}
+
+.service-card {
+  background: #fff0f5;
+  border-radius: 10px;
+  margin: 1rem auto;
+  max-width: 500px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+  color: #aa4dc8;
+}
+
+.service-card ul {
+  text-align: left;
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .branding img {
+  height: 60px;
+  margin-top: 1rem;
+}
