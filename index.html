@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Poppy Balloons | Cheyenne, WY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Balloon Garlands, Arches, and Party Decor - Poppy Balloons in Cheyenne, WY"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background: #fff0f5;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background: url('images/hero.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header img {
+      max-width: 220px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #fff0f5;
+      background-color: rgba(0,0,0,0.4);
+      padding: 0.5rem 1.5rem;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+    .slogan {
+      font-size: 1.3rem;
+      color: #f28bc4;
+      text-align: center;
+      padding: 1.5rem;
+      animation: fadeIn 3s ease;
+    }
+    nav {
+      text-align: center;
+      padding: 1rem;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #f28bc4;
+      font-weight: bold;
+    }
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #f28bc4;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .services, .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card .content {
+      padding: 1rem;
+      text-align: center;
+    }
+    .card .content h3 {
+      color: #f28bc4;
+      margin-bottom: 0.5rem;
+    }
+    .card .content p {
+      font-size: 1rem;
+    }
+    .buttons a {
+      margin: 0.3rem;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      background: #f28bc4;
+      color: white;
+      border-radius: 6px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .buttons a:hover {
+      background: #e06ba7;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      background: #fff0f7;
+    }
+  
+    @keyframes pop {
+      0% { transform: scale(1); }
+      30% { transform: scale(1.4); }
+      60% { transform: scale(0.2); opacity: 0.6; }
+      100% { transform: scale(0); opacity: 0; }
+    }
+    .pop-o {
+      display: inline-block;
+      color: #f28bc4;
+      animation: pop 1s ease-out infinite;
+      animation-delay: 3s;
+    }
+    
+    .cta-button {
+      background: #f28bc4;
+      color: white;
+      font-size: 1.2rem;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #e06ba7;
+      transform: translateY(-3px);
+    }
+    </style>
+    
+    
+</head>
+<body>
+  <header style="background: white; padding-top: 1rem;" data-override="background: linear-gradient(rgba(242,139,196,0.3), rgba(255,255,255,0.2)), url('images/background.jpg') no-repeat center center/cover;">
+    <img src="images/poppy-logo-transparent.png" alt="Poppy Balloons Logo" />
+    <h1>Every Celebration Starts with a <span class='pop-text'>P<span class='pop-o'>O</span>P!</span></h1>
+  </header>
+
+  <nav>
+    <a href="gallery/index.html">Gallery</a>
+    <a href="faq/index.html">FAQ</a>
+    <a href="reviews/index.html">Reviews</a>
+    <a href="calendar/index.html">Booking</a>
+    <a href="contact/index.html">Contact</a>
+    <a href="map/index.html">Map</a>
+    <a href="social/index.html">Social</a>
+  </nav>
+
+  <div class="slogan">
+    We’ll get the party <span class='pop-text'>P<span class='pop-o'>O</span>PPIN!</span>
+  
+    <div style="text-align: center; margin-top: 1rem;">
+      <a href="#services" class="cta-button">🎈 Get Started</a>
+    </div>
+
+    <div class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <img src="images/garland.jpg" alt="Balloon Garland" />
+        <div class="content">
+          <h3>Balloon Garland</h3>
+          <p>$125+ ($12.50/ft)</p>
+          <div class="buttons">
+            <a href="https://paypal.me/poppyballoons">Pay Now</a>
+            <a href="https://square.link/u/poppyballoons-deposit">Book</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/arch.jpg" alt="Balloon Arch" />
+        <div class="content">
+          <h3>Balloon Arch</h3>
+          <p>Starting at $200</p>
+          <div class="buttons">
+            <a href="https://paypal.me/poppyballoons">Pay Now</a>
+            <a href="https://square.link/u/poppyballoons-deposit">Book</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/grab.jpg" alt="Grab & Go Garland" />
+        <div class="content">
+          <h3>Grab & Go Garland</h3>
+          <p>$75 Flat</p>
+          <div class="buttons">
+            <a href="https://paypal.me/poppyballoons">Pay Now</a>
+            <a href="https://square.link/u/poppyballoons-deposit">Book</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/custom.jpg" alt="Custom Themes" />
+        <div class="content">
+          <h3>Custom Themes</h3>
+          <p>Prices Vary</p>
+          <div class="buttons">
+            <a href="https://paypal.me/poppyballoons">Pay Now</a>
+            <a href="https://square.link/u/poppyballoons-deposit">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div style="text-align: center; margin-top: 1rem;">
+      <a href="#services" class="cta-button">🎈 Get Started</a>
+    </div>
+
+    <div class="section" id="services">
+    <h2>Client Love</h2>
+    <div class="reviews">
+      <div class="card">
+        <div class="content">
+          <h3>Jessica R.</h3>
+          <p>“Poppy Balloons made our daughter's birthday unforgettable. The garlands were stunning!”</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h3>Travis M.</h3>
+          <p>“They showed up on time and everything looked better than I imagined. Highly recommend!”</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h3>Elena K.</h3>
+          <p>“The team was professional, friendly, and made setup so easy. Thank you!”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Poppy Balloons · Based in Cheyenne, WY
+  
+    <div style="text-align:center; margin-top: 2rem;">
+      <a href="https://facebook.com/poppyballoons" target="_blank" style="margin: 0 10px;">
+        <img src="images/facebook.png" alt="Facebook" style="width:40px;">
+      </a>
+      <a href="https://instagram.com/poppyballoons" target="_blank" style="margin: 0 10px;">
+        <img src="images/instagram.png" alt="Instagram" style="width:40px;">
+      </a>
+    </div>
+  </footer>
+    
+</body>
+</html>
